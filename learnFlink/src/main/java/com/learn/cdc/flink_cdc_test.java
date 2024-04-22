@@ -19,7 +19,7 @@ public class flink_cdc_test {
                 .hostname("hadoop102")
                 .port(3306)
                 .databaseList("tms") // set captured database
-                .tableList("tms.base_dic") // set captured table
+                .tableList("tms.base_complex") // set captured table
                 .username("root")
                 .password("123456")
                 .deserializer(new JsonDebeziumDeserializationSchema()) // converts SourceRecord to JSON String
